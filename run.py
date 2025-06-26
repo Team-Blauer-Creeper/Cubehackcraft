@@ -4,7 +4,7 @@ print("""
 Ban(need Ban.ini)
 Kick(need Kick.ini)
 give(need give.ini)
-crash:Crash the server
+crash: Crash the server
 seed: crack the seed
 \033[0m
 """)
@@ -14,7 +14,15 @@ i = 0
 a = ["",""]
 b = ""
 c = "\033[0m"
-title = ""
+title = """
+\033[92m
+Ban(need Ban.ini)
+Kick(need Kick.ini)
+give(need give.ini)
+crash:Crash the server
+seed: crack the seed
+\033[0m
+"""
 while i ==0:
     cmd = input(f"{c}{b}>")
     a = cmd.split()
@@ -31,9 +39,9 @@ i: {i}
         os.system("clear")
         print(title)
     if a[0] == "cleartitle":
-        title = ""
+        print("Fehler")
     if a[0] == "settitle":
-        title = a[1]
+        print("Fehler")
     if a[0] == "color":
         if a[1] == "green":
             c = "\033[92m"
